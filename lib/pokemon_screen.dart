@@ -16,6 +16,8 @@ class _PokemonScreenState extends State<PokemonScreen> {
       'https://sg.portal-pokemon.com/play/resources/pokedex/img/pm/cf47f9fac4ed3037ff2a8ea83204e32aff8fb5f3.png';
   final charmaUrl =
       'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/004.png';
+  final pikachuUrl =
+      'https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png';
   List<PokemonModel> list = [];
 
   @override
@@ -46,6 +48,18 @@ class _PokemonScreenState extends State<PokemonScreen> {
         moves: 'Mega-Punch Fire-punch',
         description:
             'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
+      ),
+      PokemonModel(
+        name: 'Pikachu',
+        image: pikachuUrl,
+        color: Colors.amber,
+        number: '#003',
+        pokemon_type: 'Electric',
+        weight: '6.0 kg',
+        height: '0.4 m',
+        moves: 'Mega-Punch Pay-Day',
+        description:
+        'Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.',
       ),
     ];
   }

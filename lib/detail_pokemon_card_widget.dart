@@ -77,8 +77,12 @@ class DetailPokemonCardWidget extends StatelessWidget {
             ),
             Positioned(
               top: 300,
-              left: 120,
+              left: 0,
+              right: 0,
               child: Row(
+                mainAxisAlignment: model.pokemon_second_type == null
+                    ? MainAxisAlignment.center
+                    : MainAxisAlignment.center,
                 children: [
                   Container(
                     width: 80,
@@ -97,8 +101,8 @@ class DetailPokemonCardWidget extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(width: 12),
-                  if (model.pokemon_second_type != null)
+                  if (model.pokemon_second_type != null) ...[
+                    SizedBox(width: 12),
                     Container(
                       width: 80,
                       padding: EdgeInsets.symmetric(vertical: 4),
@@ -115,6 +119,7 @@ class DetailPokemonCardWidget extends StatelessWidget {
                         ),
                       ),
                     ),
+                  ],
                 ],
               ),
             ),
