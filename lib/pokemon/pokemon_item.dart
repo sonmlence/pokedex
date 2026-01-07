@@ -8,7 +8,7 @@ class PokemonItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 204,
+      height: 240,
       width: 212,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -18,7 +18,8 @@ class PokemonItem extends StatelessWidget {
             child: Center(
               child: Container(
                 margin: EdgeInsets.symmetric(vertical: 10),
-                child: Image.network(model.image, height: 200),
+                child: Image.network(model.image, height: 200,),
+
               ),
             ),
           ),
